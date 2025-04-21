@@ -16,7 +16,7 @@
 
 ## 📁 Project Structure
 
-\`\`\`
+```
 src/
 ├── server.js                      # Entry point of the application
 ├── controllers/
@@ -33,7 +33,7 @@ src/
 │   ├── cache.js                   # Implements caching using LRU cache
 │   ├── csv.parser.js              # Parses CSV files
 │   └── logger.js                  # Logs application events
-\`\`\`
+```
 
 ---
 
@@ -41,24 +41,24 @@ src/
 
 1. **Clone the repository:**
 
-\`\`\`bash
+```bash
 git clone <repository-url>
 cd transaction-analyzer
-\`\`\`
+```
 
 2. **Install dependencies:**
 
-\`\`\`bash
-npm install
-\`\`\`
+```bash
+npm install```
+
 
 3. **Environment Setup:**
 
 Create a \`.env\` file in the root directory and add:
 
-\`\`\`env
+```env
 PORT=3000
-\`\`\`
+```
 
 ---
 
@@ -66,23 +66,22 @@ PORT=3000
 
 1. **Start the server:**
 
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
-
+```
 2. **Make a request:**
 
 Use an API client like Postman to send a \`POST\` request to:
 
-\`\`\`
-/transactions/analyze
-\`\`\`
+
+```/transactions/analyze
+```
 
 with a CSV file attached as \`file\` in \`form-data\`.
 
 3. **Example response:**
 
-\`\`\`json
+```json
 {
   "summary": {
     "user1": {
@@ -96,7 +95,7 @@ with a CSV file attached as \`file\` in \`form-data\`.
     "totalAmount": 1500
   }
 }
-\`\`\`
+```
 
 ---
 
@@ -104,11 +103,10 @@ with a CSV file attached as \`file\` in \`form-data\`.
 
 The uploaded CSV should contain the following columns:
 
-- \`TransactionID\`
-- \`UserID\`
-- \`Date\`
-- \`Amount\`
-- \`TransactionType\` (Credit/Debit)
+- `TransactionID`
+- `UserID`
+- `Date`
+- `Amount`- `TransactionType` (Credit/Debit)
 
 ---
 
@@ -117,7 +115,7 @@ The uploaded CSV should contain the following columns:
 - **express** – Web framework for Node.js  
 - **multer** – Middleware for handling file uploads  
 - **csv-parser** – Streaming CSV parser  
-- **dotenv** – Loads environment variables from \`.env\`  
+- **dotenv** – Loads environment variables from `.env`  
 - **lru-cache** – In-memory caching solution  
 - **winston** – Logging library  
 
