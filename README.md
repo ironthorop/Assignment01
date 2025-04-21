@@ -54,7 +54,7 @@ npm install```
 
 3. **Environment Setup:**
 
-Create a \`.env\` file in the root directory and add:
+Create a `.env` file in the root directory and add:
 
 ```env
 PORT=3000
@@ -71,13 +71,15 @@ npm run dev
 ```
 2. **Make a request:**
 
-Use an API client like Postman to send a \`POST\` request to:
+Use an API client like Postman to send a `POST` request to:
 
 
-```/transactions/analyze
+```
+http://localhost:3000/transactions/analyze
+
 ```
 
-with a CSV file attached as \`file\` in \`form-data\`.
+with a CSV file attached as `file` in `form-data`.
 
 3. **Example response:**
 
