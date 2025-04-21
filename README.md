@@ -49,7 +49,8 @@ cd transaction-analyzer
 2. **Install dependencies:**
 
 ```bash
-npm install```
+npm install
+```
 
 
 3. **Environment Setup:**
@@ -66,7 +67,8 @@ PORT=3000
 
 1. **Start the server:**
 
-```bash
+```
+bash
 npm run dev
 ```
 2. **Make a request:**
@@ -83,7 +85,8 @@ with a CSV file attached as `file` in `form-data`.
 
 3. **Example response:**
 
-```json
+```
+json
 {
   "summary": {
     "user1": {
